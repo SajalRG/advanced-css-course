@@ -1,0 +1,7 @@
+@mixin clearfix {
+    &::after {
+        content: ""; //otherwise pseudo element is ignored
+        display: table;
+        clear: both; //clears both float-left and float-right
+    }
+}
